@@ -2,10 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Luckham | Web Development Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header contains the site title and navigation links. -->
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#home">Marco Luckham</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- This is the first section visitors see. -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">WEB DEVELOPMENT STUDENT</p>
+        <h1>Hello, I am <span>Marco Luckham</span>.</h1>
+        <p>I am a student at the University of Utah studyiing Mechanical Engineering while also learning web development. This portfolio is where I will share my progress and projects.</p>
+        <a class="button" href="#projects">See my projects</a>
+      </div>
+
+      <!-- Replace img/me.png with another image path if you add a new photo. -->
+      <img class="profile-picture" src="img/Portrait.png" alt="A picture of Marco Luckham">
+    </section>
+
+    <!-- The about section is a short introduction. -->
+    <section id="about" class="content-section">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2>Learning by building</h2>
+      <p>I am currently taking a web development course and practicing a little every day. I enjoy turning ideas into simple, useful, and friendly websites.</p>
+      <p>As I learn more, I will update this page with new work, lessons, and goals.</p>
+    </section>
+
+    <!-- Add or remove skills as you learn new tools. -->
+    <section id="skills" class="content-section shaded-section">
+      <p class="eyebrow">WHAT I AM LEARNING</p>
+      <h2>My skills</h2>
+      <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>MATLAB</span>
+        <span>C++</span>
+        <span>Microsoft Office</span>
+        <span>Composites</span>
+        <span>Power tools</span>
+        <span>SolidWorks</span>
+      </div>
+    </section>
+
+    <!-- Each project card includes a description and a goal. -->
+    <section id="projects" class="content-section">
+      <p class="eyebrow">MY WORK</p>
+      <h2>Featured projects</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Water Pump</h3>
+          <p>I used SolidWorks to design the parts for a water pump, then built and 3D printed the pump to turn the digital model into a working physical project.</p>
+          <p><strong>Goal:</strong> Create an accurate 3D model and produce a functional water pump through hands-on prototyping and 3D printing.</p>
+          <a href="#contact">Ask me about it</a>
+        </article>
+        <article class="project-card">
+          <h3>Ping Pong Shooter</h3>
+          <p>I coded a robot that aims and shoots ping pong balls at targets. This project combined programming, robot control, and testing to improve the robot's accuracy.</p>
+          <p><strong>Goal:</strong> Program the robot to aim reliably and successfully shoot ping pong balls into its targets.</p>
+          <a href="#contact">Ask me about it</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Visitors can use this section to get in touch. -->
+    <section id="contact" class="contact-section">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Contact me</h2>
+      <p>Have a question or want to talk about a project? Send me an email.</p>
+      <a class="button light-button" href="mailto:your.email@example.com">marco.luckham@gmail.com </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Marco Luckham. Built while learning web development.</p>
+  </footer>
 </body>
 </html>
